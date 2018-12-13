@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External, not linked
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    -->
+
+    <!-- Own inline JS -->
+    <script>
+    function addPerson() {
+    var node = document.createElement("LI");                 // Create a <li> node
+        var sName = document.getElementById("myNewName").value;
+            var textnode = document.createTextNode(sName);         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
+                }
+            </script>    
+
+</head>
+<body>
+
+
+<input id="myNewName" type=“text“ placeholder=“New….”>
+<button onclick="addPerson();">Add</button>
+
+<ul id="myList">
+    <li>Jan</li>
+    <li>Kees</li>
+    <li>Miep</li>
+    <li>Jannus</li>
+
+</ul>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
