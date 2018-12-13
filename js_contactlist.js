@@ -10,7 +10,8 @@
     function myFilterFunction() {
         var sSearchWord = document.getElementById("myFilterBox").value;
         console.log(sSearchWord);
-        } */
+        }
+        */
 
 // NEWFILTERLIST
 function myFilterFunction() {
